@@ -1,113 +1,99 @@
 * {margin:0;padding:0;box-sizing:border-box;}
 
 body {
-  background:#f2f2f2;
   font-family: Arial, sans-serif;
   color:#2b2b2b;
-}
-
-/* ===== BIGLIETTO ===== */
-.card {
-  width:85%;
-  max-width:1000px;
-  margin:60px auto;
   background:white;
-  box-shadow:0 10px 30px rgba(0,0,0,0.12);
 }
 
-.card-content {
-  display:flex;
-  justify-content:space-between;
-  padding:40px;
+.container {
+  width:90%;
+  max-width:1000px;
+  margin:auto;
 }
 
-.text h1 {
-  font-size:28px;
-  font-weight:600;
-}
-
-.text p {
-  color:#666;
-  margin-top:4px;
-}
-
-.info {
-  margin-top:18px;
-  font-size:15px;
-  color:#333;
-}
-
-.logo-box img {
-  width:120px;
-}
-
-/* BANDA BLU IDENTICA BIGLIETTO */
-.blue-band {
-  height:70px;        /* SPESSA COME BIGLIETTO */
-  background:#1f3e55; /* blu sanitario scuro */
-}
-
-/* BUTTON */
-.btn {
-  display:inline-block;
-  margin-top:18px;
-  padding:10px 20px;
+/* HEADER */
+.header {
   background:#1f3e55;
   color:white;
-  text-decoration:none;
-  border-radius:3px;
-  font-size:14px;
+  padding:20px 0;
 }
 
-/* ===== SEZIONI SITO ===== */
+.header h1 {
+  font-size:22px;
+}
+
+.header p {
+  font-size:14px;
+  color:#d0d0d0;
+}
+
+/* HERO */
+.hero {
+  background:#f5f7f8;
+  padding:50px 0;
+}
+
+.hero h2 {
+  font-size:26px;
+}
+
+.hero p {
+  margin:10px 0;
+  color:#555;
+}
+
+.btn {
+  display:inline-block;
+  background:#1f3e55;
+  color:white;
+  padding:10px 20px;
+  text-decoration:none;
+  font-size:14px;
+  border-radius:2px;
+}
+
+/* SECTIONS */
 .section {
-  width:85%;
-  max-width:1000px;
-  margin:60px auto;
-  background:white;
-  padding:40px;
-  box-shadow:0 5px 15px rgba(0,0,0,0.05);
+  padding:50px 0;
 }
 
 .section.light {
-  background:#f7f9fa;
+  background:#f5f7f8;
 }
 
-.section h2 {
-  font-size:22px;
+.section h3 {
+  font-size:20px;
   margin-bottom:10px;
 }
 
-/* GRID SERVIZI */
-.grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
-  margin-top:20px;
+.section ul {
+  padding-left:20px;
 }
 
-.card-box {
-  padding:20px;
-  border:1px solid #ddd;
-  background:white;
-  text-align:center;
-  font-size:15px;
+.section li {
+  margin:6px 0;
 }
 
 /* MAP */
 iframe {
   width:100%;
-  height:320px;
+  height:300px;
   border:0;
+  margin-top:15px;
 }
 
 /* FOOTER */
 footer {
   background:#1f3e55;
   color:white;
-  padding:15px;
-  text-align:center;
-  margin-top:60px;
+  padding:15px 0;
+  font-size:13px;
+}
+
+.footer-flex {
+  display:flex;
+  justify-content:space-between;
 }
 
 footer a {
