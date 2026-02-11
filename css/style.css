@@ -1,119 +1,117 @@
 * {margin:0;padding:0;box-sizing:border-box;}
 
 body {
-  font-family: Montserrat, Arial, sans-serif;
+  background:#f2f2f2;
+  font-family: Arial, sans-serif;
   color:#2b2b2b;
-  background:white;
 }
 
-.container {
+/* ===== BIGLIETTO ===== */
+.card {
   width:85%;
-  max-width:1100px;
-  margin:auto;
+  max-width:1000px;
+  margin:60px auto;
+  background:white;
+  box-shadow:0 10px 30px rgba(0,0,0,0.12);
 }
 
-/* HEADER */
-.header {
-  border-bottom:10px solid #2f4f5f;
-  padding:25px 0;
-}
-
-.header-flex {
+.card-content {
   display:flex;
   justify-content:space-between;
-  align-items:center;
+  padding:40px;
 }
 
-.brand h1 {
-  font-size:26px;
-  font-weight:700;
-}
-
-.brand p {
-  font-size:14px;
-  color:#666;
-}
-
-.logo {
-  width:90px;
-}
-
-/* HERO */
-.hero {
-  background:#f5f7f8;
-  padding:80px 0;
-  text-align:center;
-}
-
-.hero h2 {
-  font-size:32px;
-  margin-bottom:10px;
-}
-
-.hero p {
-  font-size:18px;
-  margin-bottom:20px;
-}
-
-.btn {
-  background:#2f4f5f;
-  color:white;
-  padding:12px 26px;
-  text-decoration:none;
-  border-radius:3px;
+.text h1 {
+  font-size:28px;
   font-weight:600;
 }
 
-/* SERVICES */
-.services {
-  padding:60px 0;
+.text p {
+  color:#666;
+  margin-top:4px;
 }
 
+.info {
+  margin-top:18px;
+  font-size:15px;
+  color:#333;
+}
+
+.logo-box img {
+  width:120px;
+}
+
+/* BANDA BLU IDENTICA BIGLIETTO */
+.blue-band {
+  height:70px;        /* SPESSA COME BIGLIETTO */
+  background:#1f3e55; /* blu sanitario scuro */
+}
+
+/* BUTTON */
+.btn {
+  display:inline-block;
+  margin-top:18px;
+  padding:10px 20px;
+  background:#1f3e55;
+  color:white;
+  text-decoration:none;
+  border-radius:3px;
+  font-size:14px;
+}
+
+/* ===== SEZIONI SITO ===== */
+.section {
+  width:85%;
+  max-width:1000px;
+  margin:60px auto;
+  background:white;
+  padding:40px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+.section.light {
+  background:#f7f9fa;
+}
+
+.section h2 {
+  font-size:22px;
+  margin-bottom:10px;
+}
+
+/* GRID SERVIZI */
 .grid {
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
   gap:20px;
+  margin-top:20px;
 }
 
-.card {
+.card-box {
   padding:20px;
   border:1px solid #ddd;
+  background:white;
   text-align:center;
-  border-radius:4px;
-}
-
-/* PROFILE */
-.profile {
-  padding:60px 0;
+  font-size:15px;
 }
 
 /* MAP */
-.map iframe {
+iframe {
   width:100%;
-  height:350px;
+  height:320px;
   border:0;
 }
 
 /* FOOTER */
 footer {
-  background:#2f4f5f;
+  background:#1f3e55;
   color:white;
-  padding:20px 0;
-}
-
-.footer-flex {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
+  padding:15px;
+  text-align:center;
+  margin-top:60px;
 }
 
 footer a {
   color:white;
   text-decoration:none;
-  margin-left:10px;
-}
-
-/* LEGAL */
-.legal {
-  padding:50px 10%;
+  margin-left:8px;
 }
