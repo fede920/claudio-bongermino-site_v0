@@ -31,14 +31,13 @@ nav a {
   color: white;
   text-decoration: none;
   margin-left: 30px;
-  font-weight: 400;
   font-size: 14px;
 }
 
 .hero {
   height: 100vh;
   background: linear-gradient(rgba(10,31,51,0.6), rgba(10,31,51,0.6)),
-              url("img/clinic.jpg") center/cover;
+              url("../img/clinic.jpg") center/cover;
   display: flex;
   align-items: center;
   padding-top: 80px;
@@ -59,18 +58,6 @@ nav a {
 .hero h2 {
   font-size: 22px;
   font-weight: 300;
-  letter-spacing: 1px;
-}
-
-.btn-primary {
-  display: inline-block;
-  margin-top: 20px;
-  background: #bfa46f;
-  color: #0a1f33;
-  padding: 12px 28px;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 2px;
 }
 
 .section {
@@ -114,27 +101,26 @@ footer {
   font-size: 13px;
 }
 
-.lux-form input, .lux-form textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  margin-bottom: 12px;
-  font-size: 14px;
+footer a {
+  color: #bfa46f;
+  text-decoration: none;
 }
 
-.lux-form button {
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
   background: #0a1f33;
   color: white;
-  border: none;
-  padding: 14px;
+  padding: 15px;
   width: 100%;
-  font-size: 15px;
+  text-align: center;
+  font-size: 14px;
 }
 
-.back-link {
-  display: inline-block;
-  margin-top: 20px;
-  color: #0a1f33;
-  text-decoration: none;
-  font-size: 14px;
+.cookie-banner button {
+  background: #bfa46f;
+  border: none;
+  padding: 8px 15px;
+  margin-left: 10px;
+  cursor: pointer;
 }
