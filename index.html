@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dott. Claudio Bongermino | Psicoterapeuta</title>
+<title>Dott. Claudio Bongermino | Psicologo Psicoterapeuta</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -15,9 +15,9 @@
   <div class="nav-container">
     <img src="img/logo.png" class="logo">
     <nav>
-      <a href="#about">Profilo</a>
-      <a href="#services">Servizi</a>
-      <a href="#contact">Contatti</a>
+      <a href="#profilo">Profilo</a>
+      <a href="#servizi">Servizi</a>
+      <a href="#contatti">Contatti</a>
     </nav>
   </div>
 </header>
@@ -26,37 +26,64 @@
   <div class="hero-box">
     <h1>Claudio Bongermino</h1>
     <h2>Psicologo Psicoterapeuta</h2>
-    <p>Private practice in Reggio Emilia</p>
-    <a href="contatti.html" class="btn-primary">Request an appointment</a>
+    <p>Studio privato – Reggio Emilia</p>
   </div>
 </section>
 
-<section id="about" class="section">
-  <h3>Profilo Professionale</h3>
-  <p>Psicologo e Psicoterapeuta con esperienza clinica in ...</p>
+<section id="profilo" class="section">
+<h3>Profilo professionale</h3>
+<p>Dott. Claudio Bongermino, Psicologo Psicoterapeuta.</p>
+<p>Iscritto all’Albo degli Psicologi della Regione ______ n. ______</p>
+<p>P. IVA: ______</p>
+<p>Studio privato: Reggio Emilia, Italia</p>
 </section>
 
-<section id="services" class="section grey">
-  <h3>Servizi Clinici</h3>
-  <ul class="clean-list">
-    <li>Psicoterapia individuale</li>
-    <li>Terapia di coppia</li>
-    <li>Sostegno psicologico adolescenziale</li>
-  </ul>
+<section id="servizi" class="section grey">
+<h3>Servizi clinici</h3>
+<ul class="clean-list">
+<li>Psicoterapia individuale</li>
+<li>Terapia di coppia</li>
+<li>Sostegno psicologico per adolescenti e adulti</li>
+</ul>
 </section>
 
-<section id="contact" class="section">
-  <h3>Contatti Studio</h3>
-  <p>Reggio Emilia, Italia</p>
-  <p>Email: info@claudiobongermino.it</p>
-  <p>Tel: +39 XXX XXX XXXX</p>
+<section id="contatti" class="section">
+<h3>Contatti studio</h3>
+<p>Email: info@claudiobongermino.it</p>
+<p>Telefono: +39 XXX XXX XXXX</p>
 
-  <iframe src="https://www.google.com/maps?q=Reggio+Emilia&output=embed"></iframe>
+<iframe src="https://www.google.com/maps?q=Reggio+Emilia&output=embed"></iframe>
+</section>
+
+<section class="section grey">
+<h3>Avvertenze</h3>
+<p>Le informazioni presenti su questo sito non sostituiscono in alcun modo una valutazione clinica diretta da parte di un professionista sanitario qualificato.</p>
 </section>
 
 <footer>
-  © 2026 Claudio Bongermino, PhD | Private Practice
+<p>© 2026 Dott. Claudio Bongermino – Psicologo Psicoterapeuta</p>
+<p>P. IVA ______ – Iscritto all’Albo degli Psicologi n. ______</p>
+<p>
+<a href="privacy.html">Privacy Policy</a> |
+<a href="cookie.html">Cookie Policy</a>
+</p>
 </footer>
+
+<!-- COOKIE BANNER -->
+<div id="cookie-banner" class="cookie-banner">
+<p>Questo sito utilizza cookie tecnici e Google Maps. <a href="cookie.html">Scopri di più</a></p>
+<button onclick="acceptCookies()">Accetta</button>
+</div>
+
+<script>
+function acceptCookies() {
+  document.getElementById("cookie-banner").style.display="none";
+  localStorage.setItem("cookieAccepted","true");
+}
+if(localStorage.getItem("cookieAccepted")) {
+  document.getElementById("cookie-banner").style.display="none";
+}
+</script>
 
 </body>
 </html>
