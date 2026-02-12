@@ -21,12 +21,19 @@
 <section class="section form-section">
   <h3>Request an Appointment</h3>
 
-  <form class="lux-form">
-    <input type="text" placeholder="Full Name" required>
-    <input type="email" placeholder="Email Address" required>
-    <textarea placeholder="Message"></textarea>
-    <button type="submit">Submit Request</button>
-  </form>
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+  <label>Nome</label>
+  <input type="text" name="name" required>
+  
+  <label>Email</label>
+  <input type="email" name="_replyto" required>
+  
+  <label>Messaggio</label>
+  <textarea name="message" required></textarea>
+  
+  <button type="submit">Invia</button>
+</form>
+
 
   <a href="index.html" class="back-link">← Back to Home</a>
 </section>
