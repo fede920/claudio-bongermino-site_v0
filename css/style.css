@@ -20,8 +20,7 @@ body {
   margin: auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 30px;
+  gap: 60px;
 }
 
 .logo {
@@ -52,20 +51,27 @@ nav a {
               url("../img/clinic.jpg") center/cover;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding-top: 80px;
   padding-left: 8%;
   padding-right: 8%;
-  gap: 40px;
 }
 
 .hero-box {
   color: white;
   max-width: 600px;
+}
+
+.profilo-container {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.profilo-text {
   flex: 1;
 }
 
-.hero-profile {
+.profilo-image {
   flex-shrink: 0;
   width: 280px;
   height: 360px;
@@ -74,7 +80,7 @@ nav a {
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
-.hero-profile img {
+.profilo-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
